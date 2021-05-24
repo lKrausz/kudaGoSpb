@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11EB3301102AA98B62175EF1 /* Pods_kudaGoSpb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12007DF5D47238C35699641 /* Pods_kudaGoSpb.framework */; };
 		31D2A4AE265149B2005C9C8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2A4AD265149B2005C9C8D /* AppDelegate.swift */; };
 		31D2A4B0265149B2005C9C8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2A4AF265149B2005C9C8D /* SceneDelegate.swift */; };
 		31D2A4B2265149B2005C9C8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2A4B1265149B2005C9C8D /* ViewController.swift */; };
-		31D2A4B5265149B2005C9C8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D2A4B3265149B2005C9C8D /* Main.storyboard */; };
 		31D2A4B7265149B3005C9C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D2A4B6265149B3005C9C8D /* Assets.xcassets */; };
 		31D2A4BA265149B3005C9C8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D2A4B8265149B3005C9C8D /* LaunchScreen.storyboard */; };
+		31D2A4C62652782B005C9C8D /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2A4C52652782B005C9C8D /* LocationModel.swift */; };
+		31D2ED032652CC290020F0F1 /* AppEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2ED022652CC290020F0F1 /* AppEndPoint.swift */; };
+		31D2ED052652CF100020F0F1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2ED042652CF100020F0F1 /* NetworkManager.swift */; };
+		31D2ED072652F5850020F0F1 /* EventsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2ED062652F5850020F0F1 /* EventsModel.swift */; };
+		31D2ED0A265402350020F0F1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2ED08265402350020F0F1 /* OnboardingViewController.swift */; };
+		31D2ED0B265402350020F0F1 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D2ED09265402350020F0F1 /* OnboardingViewController.xib */; };
+		31D2ED0E265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2ED0C265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift */; };
+		31D2ED0F265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D2ED0D265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +28,20 @@
 		31D2A4AD265149B2005C9C8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31D2A4AF265149B2005C9C8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		31D2A4B1265149B2005C9C8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		31D2A4B4265149B2005C9C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31D2A4B6265149B3005C9C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31D2A4B9265149B3005C9C8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31D2A4BB265149B3005C9C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31D2A4C52652782B005C9C8D /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
+		31D2ED022652CC290020F0F1 /* AppEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEndPoint.swift; sourceTree = "<group>"; };
+		31D2ED042652CF100020F0F1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		31D2ED062652F5850020F0F1 /* EventsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsModel.swift; sourceTree = "<group>"; };
+		31D2ED08265402350020F0F1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		31D2ED09265402350020F0F1 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
+		31D2ED0C265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLocationTableViewCell.swift; sourceTree = "<group>"; };
+		31D2ED0D265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingLocationTableViewCell.xib; sourceTree = "<group>"; };
+		A4D209BD74AEB8202EFFD115 /* Pods-kudaGoSpb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kudaGoSpb.release.xcconfig"; path = "Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb.release.xcconfig"; sourceTree = "<group>"; };
+		B12007DF5D47238C35699641 /* Pods_kudaGoSpb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kudaGoSpb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75392590B90D1CBD42A17FE /* Pods-kudaGoSpb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kudaGoSpb.debug.xcconfig"; path = "Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11EB3301102AA98B62175EF1 /* Pods_kudaGoSpb.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				31D2A4AC265149B2005C9C8D /* kudaGoSpb */,
 				31D2A4AB265149B2005C9C8D /* Products */,
+				6F5D5C948FB45E7C899140B5 /* Pods */,
+				74A69075B69F036D6DAB1C2B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +80,36 @@
 				31D2A4AD265149B2005C9C8D /* AppDelegate.swift */,
 				31D2A4AF265149B2005C9C8D /* SceneDelegate.swift */,
 				31D2A4B1265149B2005C9C8D /* ViewController.swift */,
-				31D2A4B3265149B2005C9C8D /* Main.storyboard */,
+				31D2ED022652CC290020F0F1 /* AppEndPoint.swift */,
+				31D2A4C52652782B005C9C8D /* LocationModel.swift */,
+				31D2ED042652CF100020F0F1 /* NetworkManager.swift */,
+				31D2ED08265402350020F0F1 /* OnboardingViewController.swift */,
+				31D2ED09265402350020F0F1 /* OnboardingViewController.xib */,
+				31D2ED0C265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift */,
+				31D2ED0D265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib */,
+				31D2ED062652F5850020F0F1 /* EventsModel.swift */,
 				31D2A4B6265149B3005C9C8D /* Assets.xcassets */,
 				31D2A4B8265149B3005C9C8D /* LaunchScreen.storyboard */,
 				31D2A4BB265149B3005C9C8D /* Info.plist */,
 			);
 			path = kudaGoSpb;
+			sourceTree = "<group>";
+		};
+		6F5D5C948FB45E7C899140B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C75392590B90D1CBD42A17FE /* Pods-kudaGoSpb.debug.xcconfig */,
+				A4D209BD74AEB8202EFFD115 /* Pods-kudaGoSpb.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		74A69075B69F036D6DAB1C2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B12007DF5D47238C35699641 /* Pods_kudaGoSpb.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31D2A4BE265149B3005C9C8D /* Build configuration list for PBXNativeTarget "kudaGoSpb" */;
 			buildPhases = (
+				309BEE179BF318E17896805F /* [CP] Check Pods Manifest.lock */,
 				31D2A4A6265149B1005C9C8D /* Sources */,
 				31D2A4A7265149B1005C9C8D /* Frameworks */,
 				31D2A4A8265149B1005C9C8D /* Resources */,
+				BF82CA3EBC743862E0AF8204 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,19 +173,68 @@
 			files = (
 				31D2A4BA265149B3005C9C8D /* LaunchScreen.storyboard in Resources */,
 				31D2A4B7265149B3005C9C8D /* Assets.xcassets in Resources */,
-				31D2A4B5265149B2005C9C8D /* Main.storyboard in Resources */,
+				31D2ED0B265402350020F0F1 /* OnboardingViewController.xib in Resources */,
+				31D2ED0F265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		309BEE179BF318E17896805F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-kudaGoSpb-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF82CA3EBC743862E0AF8204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31D2A4A6265149B1005C9C8D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31D2ED052652CF100020F0F1 /* NetworkManager.swift in Sources */,
+				31D2A4C62652782B005C9C8D /* LocationModel.swift in Sources */,
+				31D2ED072652F5850020F0F1 /* EventsModel.swift in Sources */,
+				31D2ED0A265402350020F0F1 /* OnboardingViewController.swift in Sources */,
+				31D2ED0E265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift in Sources */,
 				31D2A4B2265149B2005C9C8D /* ViewController.swift in Sources */,
 				31D2A4AE265149B2005C9C8D /* AppDelegate.swift in Sources */,
+				31D2ED032652CC290020F0F1 /* AppEndPoint.swift in Sources */,
 				31D2A4B0265149B2005C9C8D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +242,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		31D2A4B3265149B2005C9C8D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				31D2A4B4265149B2005C9C8D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		31D2A4B8265149B3005C9C8D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +371,7 @@
 		};
 		31D2A4BF265149B3005C9C8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C75392590B90D1CBD42A17FE /* Pods-kudaGoSpb.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +391,7 @@
 		};
 		31D2A4C0265149B3005C9C8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4D209BD74AEB8202EFFD115 /* Pods-kudaGoSpb.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
