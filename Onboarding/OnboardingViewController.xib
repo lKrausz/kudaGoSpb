@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingViewController" customModule="kudaGoSpb" customModuleProvider="target">
             <connections>
-                <outlet property="continueButton" destination="06R-xX-AeZ" id="SgX-c2-uR0"/>
                 <outlet property="tableView" destination="2nM-c0-9DE" id="R4o-7B-5Ze"/>
                 <outlet property="titleLabel" destination="fo0-aO-njz" id="wY6-zM-ivX"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -21,17 +20,11 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k75-VL-tqV">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <items>
-                        <navigationItem title="Давайте немного узнаем о вас!" id="7me-pF-TOb"/>
-                    </items>
-                </navigationBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2nM-c0-9DE">
-                    <rect key="frame" x="0.0" y="168" width="414" height="634"/>
+                    <rect key="frame" x="0.0" y="124" width="414" height="738"/>
                 </tableView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo0-aO-njz">
-                    <rect key="frame" x="0.0" y="88" width="414" height="80"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="80"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="QBc-mT-jlG"/>
                     </constraints>
@@ -39,32 +32,19 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06R-xX-AeZ">
-                    <rect key="frame" x="176" y="817" width="62" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="lIP-2C-Xiw"/>
-                    </constraints>
-                    <state key="normal" title="Continue"/>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="k75-VL-tqV" firstAttribute="trailing" secondItem="2nM-c0-9DE" secondAttribute="trailing" id="3DX-rG-YQc"/>
-                <constraint firstItem="06R-xX-AeZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A0c-4G-3Bj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2nM-c0-9DE" secondAttribute="bottom" id="98N-hP-0e7"/>
                 <constraint firstItem="2nM-c0-9DE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DvJ-ga-Jcf"/>
-                <constraint firstItem="06R-xX-AeZ" firstAttribute="top" secondItem="2nM-c0-9DE" secondAttribute="bottom" constant="15" id="EtD-0b-X1t"/>
-                <constraint firstItem="2nM-c0-9DE" firstAttribute="leading" secondItem="k75-VL-tqV" secondAttribute="leading" id="Fl7-HR-VXC"/>
                 <constraint firstItem="2nM-c0-9DE" firstAttribute="top" secondItem="fo0-aO-njz" secondAttribute="bottom" id="I5v-QR-myf"/>
-                <constraint firstItem="k75-VL-tqV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Ip9-6k-fT2"/>
-                <constraint firstItem="fo0-aO-njz" firstAttribute="top" secondItem="k75-VL-tqV" secondAttribute="bottom" id="cUA-0n-eHT"/>
+                <constraint firstItem="fo0-aO-njz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="IQa-D2-PLa"/>
                 <constraint firstItem="fo0-aO-njz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fjz-ih-eh2"/>
                 <constraint firstItem="fo0-aO-njz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="h7K-Rg-mMN"/>
                 <constraint firstItem="2nM-c0-9DE" firstAttribute="top" secondItem="fo0-aO-njz" secondAttribute="bottom" id="hRZ-ey-4du"/>
                 <constraint firstItem="2nM-c0-9DE" firstAttribute="top" secondItem="fo0-aO-njz" secondAttribute="bottom" id="kxD-fw-evY"/>
-                <constraint firstItem="06R-xX-AeZ" firstAttribute="top" secondItem="2nM-c0-9DE" secondAttribute="bottom" constant="15" id="mi4-Uv-H1e"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2nM-c0-9DE" secondAttribute="trailing" id="tXQ-OV-jdq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="06R-xX-AeZ" secondAttribute="bottom" constant="15" id="zr8-av-eyI"/>
             </constraints>
             <point key="canvasLocation" x="34.782608695652179" y="64.955357142857139"/>
         </view>

@@ -23,12 +23,5 @@ class OnboardingLocationTableViewCell: UITableViewCell {
     func configCell(location: String) {
         self.locationLabel.text = location
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        UserDefaults.standard.set(locationLabel.text, forKey: "userlocation")
-    }
-    
     
 }

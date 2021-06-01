@@ -18,8 +18,9 @@ class ViewController: UIViewController {
         super.viewDidLayoutSubviews()
         if Core.shared.isNewUser() {
             let vc = OnboardingViewController.init()
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            let navController = UINavigationController.init(rootViewController: vc)
+            navController.modalPresentationStyle = .fullScreen
+            present(navController, animated: true)
         }
     }
 

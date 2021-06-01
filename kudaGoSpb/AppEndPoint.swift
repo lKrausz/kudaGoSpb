@@ -15,7 +15,7 @@ protocol EndPointType {
 
 public enum kudagoApi {
     case locations
-    case events
+    case eventTypes
 }
 
 extension kudagoApi: EndPointType {
@@ -29,17 +29,12 @@ extension kudagoApi: EndPointType {
         return "v1.4"
     }
     
-    var language: String {
-        return "/?lang=ru"
-    }
-
-    
     var path: URL {
         switch self {
         case .locations:
             return  baseUrl.appendingPathComponent(version + "/locations")
-        case .events:
-            return  baseUrl.appendingPathComponent(version + "/events")
+        case .eventTypes:
+            return  baseUrl.appendingPathComponent(version + "/event-categories")
         }
     }
 }
