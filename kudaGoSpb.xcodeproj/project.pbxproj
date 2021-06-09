@@ -22,11 +22,7 @@
 		31D2ED0B265402350020F0F1 /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D2ED09265402350020F0F1 /* OnboardingViewController.xib */; };
 		31D2ED0E265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31D2ED0C265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift */; };
 		31D2ED0F265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31D2ED0D265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib */; };
-		31F4F4B7265EC728008773CE /* EventTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4F4B5265EC728008773CE /* EventTypeViewController.swift */; };
-		31F4F4B8265EC728008773CE /* EventTypeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F4F4B6265EC728008773CE /* EventTypeViewController.xib */; };
 		31F4F4BE266278F4008773CE /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4F4BD266278F4008773CE /* OnboardingModel.swift */; };
-		31F4F4CB2662B4D5008773CE /* EventsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F4F4C92662B4D5008773CE /* EventsCollectionViewCell.swift */; };
-		31F4F4CC2662B4D5008773CE /* EventsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31F4F4CA2662B4D5008773CE /* EventsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,11 +42,7 @@
 		31D2ED09265402350020F0F1 /* OnboardingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingViewController.xib; sourceTree = "<group>"; };
 		31D2ED0C265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLocationTableViewCell.swift; sourceTree = "<group>"; };
 		31D2ED0D265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingLocationTableViewCell.xib; sourceTree = "<group>"; };
-		31F4F4B5265EC728008773CE /* EventTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeViewController.swift; sourceTree = "<group>"; };
-		31F4F4B6265EC728008773CE /* EventTypeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTypeViewController.xib; sourceTree = "<group>"; };
 		31F4F4BD266278F4008773CE /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
-		31F4F4C92662B4D5008773CE /* EventsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCollectionViewCell.swift; sourceTree = "<group>"; };
-		31F4F4CA2662B4D5008773CE /* EventsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventsCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4D209BD74AEB8202EFFD115 /* Pods-kudaGoSpb.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kudaGoSpb.release.xcconfig"; path = "Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb.release.xcconfig"; sourceTree = "<group>"; };
 		B12007DF5D47238C35699641 /* Pods_kudaGoSpb.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kudaGoSpb.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75392590B90D1CBD42A17FE /* Pods-kudaGoSpb.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kudaGoSpb.debug.xcconfig"; path = "Target Support Files/Pods-kudaGoSpb/Pods-kudaGoSpb.debug.xcconfig"; sourceTree = "<group>"; };
@@ -94,7 +86,6 @@
 				31D2A4B1265149B2005C9C8D /* ViewController.swift */,
 				31157E652663C8D700305C88 /* Router.swift */,
 				31D2ED022652CC290020F0F1 /* AppEndPoint.swift */,
-				31F4F4BD266278F4008773CE /* OnboardingModel.swift */,
 				31D2ED042652CF100020F0F1 /* NetworkManager.swift */,
 				31F4F4AB265EC255008773CE /* Onboarding */,
 				31D2ED062652F5850020F0F1 /* EventsModel.swift */,
@@ -108,15 +99,12 @@
 		31F4F4AB265EC255008773CE /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				31F4F4BD266278F4008773CE /* OnboardingModel.swift */,
 				31157E692664DFAA00305C88 /* OnboardingPresentor.swift */,
 				31D2ED08265402350020F0F1 /* OnboardingViewController.swift */,
 				31D2ED09265402350020F0F1 /* OnboardingViewController.xib */,
 				31D2ED0C265402CE0020F0F1 /* OnboardingLocationTableViewCell.swift */,
 				31D2ED0D265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib */,
-				31F4F4B5265EC728008773CE /* EventTypeViewController.swift */,
-				31F4F4B6265EC728008773CE /* EventTypeViewController.xib */,
-				31F4F4C92662B4D5008773CE /* EventsCollectionViewCell.swift */,
-				31F4F4CA2662B4D5008773CE /* EventsCollectionViewCell.xib */,
 			);
 			name = Onboarding;
 			path = ../Onboarding;
@@ -199,8 +187,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31D2A4BA265149B3005C9C8D /* LaunchScreen.storyboard in Resources */,
-				31F4F4CC2662B4D5008773CE /* EventsCollectionViewCell.xib in Resources */,
-				31F4F4B8265EC728008773CE /* EventTypeViewController.xib in Resources */,
 				31D2A4B7265149B3005C9C8D /* Assets.xcassets in Resources */,
 				31D2ED0B265402350020F0F1 /* OnboardingViewController.xib in Resources */,
 				31D2ED0F265402CE0020F0F1 /* OnboardingLocationTableViewCell.xib in Resources */,
@@ -264,10 +250,8 @@
 				31D2A4B2265149B2005C9C8D /* ViewController.swift in Sources */,
 				31157E6A2664DFAA00305C88 /* OnboardingPresentor.swift in Sources */,
 				31D2A4AE265149B2005C9C8D /* AppDelegate.swift in Sources */,
-				31F4F4CB2662B4D5008773CE /* EventsCollectionViewCell.swift in Sources */,
 				31D2ED032652CC290020F0F1 /* AppEndPoint.swift in Sources */,
 				31D2A4B0265149B2005C9C8D /* SceneDelegate.swift in Sources */,
-				31F4F4B7265EC728008773CE /* EventTypeViewController.swift in Sources */,
 				31157E662663C8D700305C88 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

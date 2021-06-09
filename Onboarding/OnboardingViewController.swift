@@ -24,7 +24,7 @@ class OnboardingViewController: UIViewController {
         
         case .location:
             titleLabel.text = "О событиях в каком городе вы бы хотели узнавать?"
-            NetworkManager.shared.getLocations(completion: { data in
+            NetworkManager.shared.getOnboardingData(url: kudagoApi.locations.path, completion: { data in
                 self.data = data
                 
                 DispatchQueue.main.async {
@@ -36,7 +36,7 @@ class OnboardingViewController: UIViewController {
             titleLabel.text = "Какие события наиболее интересны для вас?"
             self.tableView.allowsMultipleSelection = true
             self.tableView.allowsMultipleSelectionDuringEditing = true
-            NetworkManager.shared.getEventTypes(completion: { data in
+            NetworkManager.shared.getOnboardingData(url: kudagoApi.eventTypes.path, completion: { data in
                 self.data = data
                 
                 DispatchQueue.main.async {
@@ -56,17 +56,20 @@ class OnboardingViewController: UIViewController {
     
     func addReadyButton() {
         //TODO: normal button position and constraints
-          let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-          button.backgroundColor = .green
-          button.setTitle("Ready!", for: .normal)
-          button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
-          self.view.addSubview(button)
-
-        
+        let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+        button.backgroundColor = .green
+        button.layer.cornerRadius = 20
+        button.layer.borderWidth = 3.0
+        button.layer.borderColor = UIColor.black.cgColor
+        button.clipsToBounds = true
+        button.setTitle("Ready!", for: .normal)
+        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        self.view.addSubview(button)
     }
+    
     @objc func buttonAction(sender: UIButton!) {
-        //TODO: saved data events
-        dismiss(animated: false, completion: nil)
+        //TODO: save events data
+        dismiss(animated: true, completion: nil)
     }
 
    
@@ -84,9 +87,13 @@ extension OnboardingViewController : UITableViewDelegate, UITableViewDataSource 
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if currentType == .location {
         OnboardingPresentor.shared.currentOnboardScreen = .event
         let captureViewCon = OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
         self.navigationController?.pushViewController(captureViewCon, animated: true)
+        //TODO: save location
+        }
     }
     
 }
